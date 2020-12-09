@@ -25,10 +25,11 @@ for ls in range(len(tmp) - 1):
     np_tmp = np.array(tmp[ls], dtype=np.float)
     print(f"np_tmp={np_tmp}")
     np_tims.append(np_tmp)
-    # sum via columns and divide
-    # hours/24 minutes/60 milliseconds/1000
-    # X will be a float array [days, hours, seconds]
-    # Something like `array([ 0.        , 15.68333333,  7.4189    ])`
+
+# sum via columns and divide
+# hours/24 minutes/60 milliseconds/1000
+# X will be a float array [days, hours, seconds]
+# Something like `array([ 0.        , 15.68333333,  7.4189    ])`
 
 print(np_tims)
 
